@@ -1,0 +1,16 @@
+@import url('./reset.css');
+@import url('./style.css');
+
+@import url('./medias/mobile.css') (max-width: 768px);
+/* Media Queries */
+@import url('./medias/tablet.css') (min-width: 768px) and (max-width: 960px);
+@import url('./medias/desktop.css') (min-width: 1024px);
+
+body {
+  background-color: #fff;
+  
+}
+
+img {
+  width: 100%;
+}
