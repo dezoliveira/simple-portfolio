@@ -7,3 +7,7 @@
 .navbar {
   height: 7vh;
 }
+
+.icon {
+  display: none;
+}

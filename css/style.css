@@ -46,6 +46,12 @@ body {
   gap: 15px;
 }
 
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .btn {
   padding: 10px 15px;
   font-weight: 600;
@@ -62,4 +68,75 @@ body {
 
 .btn-show:hover {
   opacity: 0.9;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tag-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.breadcrumb {
+  padding: 5px 8px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.html-css {
+  background-color: hsl(348, 100%, 61%);
+}
+
+.javascript {
+  background-color: hsl(48, 100%, 67%);
+  color: black;
+}
+
+.vue {
+  background-color: hsl(141, 53%, 53%);
+}
+
+.react {
+  background-color: hsl(204, 86%, 53%);
+}
+
+.api {
+  background-color: hsl(217, 71%, 53%)
+}
+
+.logo {
+  color: #fefefe;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 45px;
+  color: #fefefe;
+  display: block;
+}
+
+/* MODAL */
+.modal{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: #00000090;
+  opacity: 0;
+  z-index: -1;
+}
+
+.modal.active{
+  opacity: 1;
+  z-index: 1;
 }
