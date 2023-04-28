@@ -1,13 +1,17 @@
 .main {
   display: grid;
-  padding-top: 6rem;
+  padding: 4rem;
 }
 
 .navbar {
   height: 10vh;
 }
 
+.section {
+  min-width: 200;
+}
+
 .modal-content {
-  width: 40vh;
-  height: 55vh;
+  width: 90vh;
+  height: 90vh;
 }

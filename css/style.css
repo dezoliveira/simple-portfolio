@@ -186,8 +186,8 @@ body {
 }
 
 .modal-content {
-  width: 50vh;
-  height: 55vh;
+  width: 90vh;
+  height: 90vh;
   background-color: #f3f3f3;
   position: relative;
   display: flex;
