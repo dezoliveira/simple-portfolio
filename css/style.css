@@ -8,7 +8,8 @@ body {
 }
 
 .main {
-  padding-top: 5.5rem;
+  gap: 50px;
+  padding: 4rem;
 }
 
 .navbar {
@@ -41,14 +42,15 @@ body {
 
 .section {
   padding: 2rem;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 
-  /* box-shadow: 	0px 0px 11px 1px rgba(0,0,0,0.14),
+  box-shadow: 	0px 0px 11px 1px rgba(0,0,0,0.14),
   0px 0px 19px 14px rgba(0,0,0,0.03);
   border:	1px solid rgba(0,0,0,0);
-  border-radius:	4px; */
+  border-radius:	4px;
 }
 
 .article {
@@ -127,10 +129,16 @@ body {
   font-weight: 500;
 }
 
-.icon {
+.hamburger {
   font-size: 45px;
   color: #fefefe;
   display: block;
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  background-color: #fefefe;
 }
 
 /* MODAL */
@@ -147,6 +155,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .modal.active{
@@ -182,6 +193,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 
   
   box-shadow: 	0px 0px 11px 1px rgba(0,0,0,0.14),

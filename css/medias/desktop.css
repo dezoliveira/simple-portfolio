@@ -2,12 +2,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 4rem;
+
+  /*gap: 30px*/;
 }
 
 .navbar {
   height: 7vh;
 }
 
-.icon {
+.hamburger {
   display: none;
 }
