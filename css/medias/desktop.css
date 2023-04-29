@@ -1,8 +1,7 @@
 .main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 4rem;
-
+  margin-top: 80px
   /*gap: 30px*/;
 }
 

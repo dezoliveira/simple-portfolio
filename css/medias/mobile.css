@@ -1,6 +1,7 @@
 .main {
   display: grid;
   padding: 2rem;
+  margin-top: 140px;
 }
 
 .navbar {
@@ -20,5 +21,6 @@
 
 .modal-content {
   width: 90vh;
-  height: 90vh;
+  height: 70vh;
 }
+
