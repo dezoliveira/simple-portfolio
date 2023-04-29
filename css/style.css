@@ -42,7 +42,7 @@ body {
 
 .section {
   padding: 2rem;
-  min-width: 400px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 15px;
