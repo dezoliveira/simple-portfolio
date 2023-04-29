@@ -1,6 +1,6 @@
 .main {
   display: grid;
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .navbar {
@@ -9,6 +9,13 @@
 
 .section {
   width: 100%;
+}
+
+.btn-group{
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 .modal-content {
