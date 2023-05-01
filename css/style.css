@@ -2,7 +2,7 @@
 
 body {
   display: grid;
-  height: 100vh;
+  height: 100%;
   /* grid-template-rows: 10vh 80vh 10vh; */
   font-family: 'Roboto', sans-serif;
 }
