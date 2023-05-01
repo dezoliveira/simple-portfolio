@@ -12,3 +12,7 @@
 .hamburger {
   display: none;
 }
+
+.modal-content {
+  padding: 20px;
+}
