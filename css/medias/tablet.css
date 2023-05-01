@@ -10,3 +10,10 @@
 .hamburger {
   display: none;
 }
+
+.modal-content {
+  width: 60vh;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
