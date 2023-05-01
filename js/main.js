@@ -7,9 +7,6 @@ document.querySelectorAll('.btn-show')
   })
 
 function openModal(e) {
-  console.log(e.target.parentNode.parentNode.firstChild.parentNode.children[1])
-  /* let html = '' */
-  //console.log(e.target.parentNode.parentNode)
   let node = e.target.parentNode.parentNode
   let cloneNode = node.cloneNode(true)
   let projectName = cloneNode.id
@@ -44,7 +41,6 @@ function openModal(e) {
   let btnGithub = document.createElement('button')
   let linkGithub = document.createElement('a')
   let gitIcon = document.createElement('i')
-/*   let projectIcon = document.createElement('i') */
 
   div.classList.add('modal-content')
   closeButton.classList.add('close-button')
@@ -71,18 +67,16 @@ function openModal(e) {
   footer.appendChild(linkLive)
 
   linkLive.href = gitPages
+  linkLive.target = "_blank"
 
   linkLive.appendChild(btnLive)
   btnLive.textContent = "Projeto"
   btnLive.classList.add('btn', 'btn-show')
 
-/*   btnLive.appendChild(projectIcon)
-  projectIcon.classList.add('fab', 'fa-github')
-  projectIcon.style.padding = "0 3px" */
-
   footer.appendChild(linkGithub)
 
   linkGithub.href = github
+  linkGithub.target = "_blank"
 
   linkGithub.appendChild(btnGithub)
   btnGithub.textContent = "Github"
@@ -91,30 +85,6 @@ function openModal(e) {
   btnGithub.appendChild(gitIcon)
   gitIcon.classList.add('fab', 'fa-github')
   gitIcon.style.padding = "0 3px"
-
-/*   html += `
-    <div class="modal-content">
-    <div class="close-button"></div>
-      <header class="modal-header">
-        <h3>${content.id}</h3>
-      </header>
-      <footer>
-        <a href="${gitPages}" target="_blank">
-          <button>
-            Live Project
-          </button>
-        </a>
-        <a href="${github}" target="_blank">
-          <button>
-            Github
-          </button>
-        </a>
-      </footer>
-    </div>
-  `
-
-  modal.innerHTML = html */
-
 }
 
 function cancelModal(e) {
