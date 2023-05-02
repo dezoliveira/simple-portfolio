@@ -12,8 +12,8 @@
 }
 
 .modal-content {
-  width: 60vh;
-  height: 60vh;
+  width: 70%;
+  height: 70%;
   display: flex;
   justify-content: center;
 }

@@ -99,10 +99,10 @@ function cancelModal(e) {
 
 function openHamburgerMenu() {
   alert('Essa funcionalidade ainda está sendo criada!')
-  /* let div = document.createElement('div')
-  modal.appendChild(div)
-  div.classList.add('menu-content')
-  modal.classList.add('active') */
+  // let div = document.createElement('div')
+  // modal.appendChild(div)
+  // div.classList.add('menu-content')
+  // modal.classList.add('active')
 }
 
 modal.addEventListener('click', cancelModal)
