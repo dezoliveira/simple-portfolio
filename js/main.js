@@ -23,6 +23,9 @@ function openModal(e) {
   let breadcrumbs = cloneNode.firstChild.parentNode.children[1]
   breadcrumbs.style.justifyContent = 'center'
 
+  //remove o min-height do modal
+  cloneNode.children[0].style.minHeight = '0'
+
   const user = 'dezoliveira'
   const github = `https://www.github.com/${user}/${projectName}`
   const gitPages = `https://${user}.github.io/${projectName}`
