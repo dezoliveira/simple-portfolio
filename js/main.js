@@ -1,12 +1,7 @@
 let modal = document.querySelector('.modal')
 let hamburger = document.getElementById('hamburger')
 
-document.querySelectorAll('.btn-show')
-  .forEach(btn => {
-    btn.addEventListener('click', openModal)
-  })
-
-function openModal(e) {
+const openModal = (e) => {
   let node = e.target.parentNode.parentNode
   let cloneNode = node.cloneNode(true)
   let projectName = cloneNode.id
@@ -90,7 +85,7 @@ function openModal(e) {
   gitIcon.style.padding = "0 3px"
 }
 
-function cancelModal(e) {
+const cancelModal = (e) => {
   let div = document.querySelector('.modal-content')
 
   if (e.target.classList.contains('active')) {
@@ -100,13 +95,18 @@ function cancelModal(e) {
   }
 }
 
-function openHamburgerMenu() {
+const openHamburgerMenu = () => {
   alert('Essa funcionalidade ainda está sendo criada!')
   // let div = document.createElement('div')
   // modal.appendChild(div)
   // div.classList.add('menu-content')
   // modal.classList.add('active')
 }
+
+document.querySelectorAll('.btn-show')
+  .forEach(btn => {
+    btn.addEventListener('click', openModal)
+  })
 
 modal.addEventListener('click', cancelModal)
 hamburger.addEventListener('click', openHamburgerMenu)
