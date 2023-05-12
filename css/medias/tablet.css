@@ -21,3 +21,7 @@
 .btn {
   padding: 10px 0;
 }
+
+.article {
+  min-height: 0;
+}
